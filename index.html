@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--========== BOX ICONS GOOGLE ==========-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--==================== UNICONS ====================-->  
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Dietetyk Dominika</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Dietetyk Dominika</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Strona główna</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">O mnie</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Usługi</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Pomysły</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Kontakt</a></li>
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">Dietetyk</h1>
+                        <h2 class="home__subtitle">Spróbuj diety <br> dopasowanej do Twoich potrzeb.</h2>
+                        <a href="#" class="button">Zobacz ofertę</a>
+                    </div>
+    
+                    <img src="assets/img/apple1.png"  alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">O mnie</span>
+                        <h2 class="section-title about__initial">Hej! Witaj na mojej stronie, opowiem Ci kilka słów o sobie.  </h2>
+                        <p class="about__description">Jestem absolwentką XYZ na kierunku dietetyka oraz Szkoły Wyższej Psychologii Społecznej w XYZ na kierunku psychodietetyka.</p>
+                        <div id="more" style = "display: none;">Do moich szczególnych zainteresowań dietetycznych należą problemy hormonalne oraz insulinooporność. Pewnie dlatego, że u mnie samej kilka lat temu zdiagnozowano kila chorób, tak naprawdę wtedy zaczęła się moja przygoda z dietetyką. Moje własne doświadczenia pomagają mi lepiej zrozumieć swoich podopiecznych, oprócz prawidłowych relacji z jedzeniem istotne są dla mnie znaczenie snu, umiejętność pracy nad stresem oraz ulubione formy aktywnego spędzania czasu.<br></br></div>
+                        <button onclick="show()" class="button" style="border-width: 0px;">Przeczytaj</button>
+                    </div>
+
+                    <img src="assets/img/dietician.jpg" alt="" class="about__img">
+                </div>
+            </section>
+
+            <!--========== SERVICES ==========-->
+            <section class="services section bd-container" id="services">
+                <span class="section-subtitle">Usługi</span>
+                <h2 class="section-title">Oferuję wspaniałą współpracę</h2>
+
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                        <i class="material-icons" style="font-size:60px;color:var(--first-color)">menu_book</i>
+                        <h3 class="services__title">Indywidualny jadłospis</h3>
+                        <p class="services__description"> Na podstawie dokladnie przeprowadzonego wywiadu żywieniowego przygotuję jadłospis skompowany zgodnie z Twoimi preferencjami. Spróbuję Ci udowodnić, że „dieta” to nie szereg wyrzeczeń, a zdrowe nawyki żywieniowe i świadomy wybór. </p>
+                    </div>
+
+                    <div class="services__content ">
+                        <i class="material-icons" style="font-size:60px;color:var(--first-color)">contact_mail</i>
+                        <h3 class="services__title">Wsparcie</h3>
+                        <p class="services__description">Konsultacje dietetyczne mają na celu nauczenie Cię, że tylko wypracowane na stałe nawyki przynoszą stabilne, długofalowe efekty. Zaproponowane przeze mnie przepisy i rozwiązania są smaczne oraz szybkie w przygotowaniu, jednak na tym nie kończy się nasza współpraca.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <i class="material-icons" style="font-size:60px;color:var(--first-color)">more_time</i>
+                        <h3 class="services__title">Zaoszczędzony czas</h3>
+                        <p class="services__description">Uwielbiam jeść i smacznie i zdrowo, ale nie lubię spędzać długich godzin w kuchni, dlatego możesz mieć pewność, że przygotowane dla Ciebie potrawy nie będą czasochłonne. </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== MENU ==========-->
+            <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">Pomysły</span>
+                <h2 class="section-title">Posiłki na ten weekend</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="assets/img/meal1.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Sałatka</h3>
+                        <span class="menu__detail">Wegetariańskie</span>
+                        <span class="menu__preci">Kcal 1500</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-food-menu'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/meal2.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Sałatka</h3>
+                        <span class="menu__detail">Wegetariańskie</span>
+                        <span class="menu__preci">Kcal 2000</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-food-menu'></i></a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/meal3.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Sałatka</h3>
+                        <span class="menu__detail">Wegetariańskie</span>
+                        <span class="menu__preci">Kcal 1800</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-food-menu'></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== APP =======-->
+            <section class="app section bd-container">
+                <div class="app__container bd-grid">
+                    <div class="app__data">
+                        <span class="section-subtitle app__initial">Media</span>
+                        <h2 class="section-title app__initial">Jestem dostępna online i stacjonarnie</h2>
+                        <p class="app__description">Pamiętaj, że prawidłowo skomponowany jadłospis nie wystarczy, do pełni zdrowia potrzebna jest trwała zmiana nawyków żywieniowych, wprowadzana stopniowo, małymi krokami. Obecnie przyjmuję pacjentów online lub stacjonarnie w XYZ.
+                        </p>
+                    </div>
+
+                    <img src="assets/img/dietician3.jpg" alt="" class="app__img">
+                </div>
+            </section>
+
+            <!--========== CONTACT US ==========-->
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">Kontakt</span>
+                        <h2 class="section-title contact__initial">Porozmawiajmy</h2>
+                        <p class="contact__description"> Jeżeli masz jakiekolwiek pytanie, chcesz wyrazić swoją opinię lub interesuje Cię współpraca ze mną to koniecznie daj mi o tym znać!</p>
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+                            <div class="contact_box_info">
+                                <h3 class="contact__tile">Zadzwoń</h3>
+                                <span class="contact__subtitle"> +48 000 000 000 </span>
+                            </div>
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+                            <div class="contact_box_info">
+                                <h3 class="contact__tile">Napisz wiadomość</h3>
+                                <span class="contact__subtitle"> dominikaprzykład@gmail.com</span>
+                            </div>
+                        </div> 
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+                            <div class="contact_box_info">
+                                <h3 class="contact__tile"> Odwiedź mnie w gabinecie</h3>
+                                <span class="contact__subtitle"> Gabinet XYZ, Miasto</span>
+                            </div>
+                        </div>   
+                        <a href="mailto:dominikaprzyklad@gmail.com" class="button button--flex">
+                            Wyślij wiadomość
+                            <i class="uil uil-message button__icon"></i>
+                         </a>                                               
+                    </div>
+                    
+                    </div>
+                    <div class="contact__button">
+                        <img src="assets/img/dietician2.jpg" alt="" class="contact__img"> 
+                        <!---<a href="#" class="button">Kontakt</a> ==-->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Dominika</a>
+                    <span class="footer__description">Dietetyk</span>
+                </div>
+
+                <div class="footer__content">
+                    <a href="#services" class="footer__link"><h3 class="footer__subtitle">Usługi</h3></a>
+                </div>
+
+                <div class="footer__content">
+                    <a href="#menu" class="footer__link"><h3 class="footer__subtitle">Pomysły</h3></a>
+                </div>
+
+                <div class="footer__content">
+                    <a href="#contact" class="footer__link"><h3 class="footer__subtitle">Kontakt</h3></a>
+
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__subtitle">
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-google'></i></a>
+                    </h3>
+
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Paulina Piatek. Wszystkie prawa są zastrzeżone</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
