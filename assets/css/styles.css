@@ -504,7 +504,12 @@ img{
 }
 
 /*========== MEDIA QUERIES ==========*/
-@media screen and (min-width: 576px){
+/*========== prev:min:576 now: 375 iphone SE==========*/
+@media screen and (min-width: 375px){
+  .home__title {
+    margin-top: 1rem; 
+  }
+  
   .home__container,
   .about__container,
   .app__container{
